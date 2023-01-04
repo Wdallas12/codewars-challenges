@@ -1,0 +1,9 @@
+function removeSmallest(numbers){
+  if (numbers == []){
+    return [];
+  }else{
+    const min = Math.min.apply(Math, numbers)
+    const minIndex = numbers.findIndex(el => el == min)
+    return numbers.slice(0,minIndex).concat(numbers.slice(minIndex+1)
+  }
+}
