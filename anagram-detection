@@ -1,0 +1,5 @@
+var isAnagram = function(test, original) {
+  const testSort = test.toLowerCase().split('').sort((a,b) => a.localeCompare(b, "en")).join('');
+  const origSort = original.toLowerCase().split('').sort((a,b) => a.localeCompare(b, "en")).join('');
+  return testSort === origSort ? true : false
+};
